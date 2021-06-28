@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Header } from '../../components/Header';
+import { LastGames } from '../../components/LastGames';
+import { SectionTitle } from '../../components/SectionTitle';
 
 import { styles } from './styles';
 
@@ -9,7 +11,8 @@ export const Home: React.FC = () => {
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
-        <Text style={styles.title}>Ultimas partidas</Text>
+        <SectionTitle title="Ultimas partidas" />
+        <LastGames />
       </View>
     </View>
   );
