@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.buttonBg
   },
   title: {
-    fontSize: 25,
+    fontSize: 22,
     color: theme.colors.white,
   }
 });

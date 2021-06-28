@@ -1,3 +1,5 @@
+import { Poppins_700Bold } from "@expo-google-fonts/poppins"
+
 const theme = {
   colors: {
     white: '#FFFFFF',
@@ -11,6 +13,7 @@ const theme = {
     poppinsThin: 'Poppins_100Thin',
     poppinsLight: 'Poppins_300Light',
     poppinsRegular: 'Poppins_400Regular',
+    poppinsSemiBold: 'Poppins_600SemiBold',
   }
 }
 

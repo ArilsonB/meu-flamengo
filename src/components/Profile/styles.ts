@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     marginLeft: 10,
+    height: 50,
   },
   userType: {
     color: theme.colors.white,
