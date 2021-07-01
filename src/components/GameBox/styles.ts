@@ -10,5 +10,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     width: 180,
     height: 110,
-  }
+    padding: 5,
+  },
+
 });

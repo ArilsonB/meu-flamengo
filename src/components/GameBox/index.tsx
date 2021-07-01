@@ -15,7 +15,7 @@ export type ScoreBoardProps = {
 }
 
 export type GameProps = {
-  id: string,
+  id: string;
   championship: string;
   round: string;
   gameDate: string;
@@ -32,6 +32,7 @@ export function GameBox({ data, ...rest }: Props) {
   return (
     <TouchableOpacity style={styles.container} {...rest}>
       <View style={styles.content}>
+        <Text>{data.homeTeam}</Text>
       </View>
     </TouchableOpacity>
   );
