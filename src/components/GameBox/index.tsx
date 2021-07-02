@@ -37,3 +37,4 @@ export function GameBox({ data, ...rest }: Props) {
     </TouchableOpacity>
   );
 }
+
