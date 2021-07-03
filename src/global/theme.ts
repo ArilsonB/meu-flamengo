@@ -8,6 +8,10 @@ const theme = {
     primary: '',
     secondary: '',
     buttonBg: '#300000',
+    gameBoxBg: 'rgba(64, 0, 0, 0.48)',
+    brasileiraoBg: 'rgba(26, 104, 13, 0.69)',
+    copaBrasilBg: '',
+    libertadoresBg: '',
   },
   fonts: {
     poppinsThin: 'Poppins_100Thin',

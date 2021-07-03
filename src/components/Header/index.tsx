@@ -22,12 +22,12 @@ const Header: React.FC = () => {
         contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 19, alignItems: 'center' }}
         showsHorizontalScrollIndicator={false}
         horizontal>
-        <HeaderButton icon="home-outline" />
-        <HeaderButton icon="calendar-outline" />
-        <HeaderButton icon="football-outline" />
-        <HeaderButton icon="tv-outline" />
-        <HeaderButton icon="ios-card-outline" />
-        <HeaderButton icon="menu-outline" />
+        <HeaderButton icon="home-outline" title="Inicio" isActive />
+        <HeaderButton icon="calendar-outline" title="Agenda" />
+        <HeaderButton icon="football-outline" title="Partidas" />
+        <HeaderButton icon="tv-outline" title="Midia" />
+        <HeaderButton icon="ios-card-outline" title="Ingresso" />
+        <HeaderButton icon="menu-outline" title="Menu" />
       </ScrollView>
     </View >
   );
