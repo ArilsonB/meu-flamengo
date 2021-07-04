@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import {
   View,
@@ -20,14 +21,12 @@ export const FlaTvPlayer: React.FC = () => {
       <View style={styles.container}>
         <FlaTvHeader />
         <View style={styles.player}>
-          <View style={styles.playerInfo}>
-            <Player />
-            <View>
-              <Text>
-                Flamengo x Corinthians
-              </Text>
-            </View>
-          </View>
+          <Player />
+          <LinearGradient
+            colors={['transparent', '#333']}
+            style={styles.playerInfo}>
+            <Text style={styles.title}>Flamengo x Corinthians</Text>
+          </LinearGradient>
         </View>
         <View style={styles.content}>
           <View

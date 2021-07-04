@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     padding: 0,
   },
   clubImage: {
-    width: 52,
+    width: 50,
     justifyContent: 'center',
     alignItems: 'center'
   },

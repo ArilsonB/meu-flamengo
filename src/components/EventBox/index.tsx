@@ -8,7 +8,7 @@ import {
 import { styles } from './styles';
 
 type Props = {
-  isGuest: boolean;
+  isGuest?: boolean;
 }
 
 import EventIndicator from '../../assets/EventIndicator.png';

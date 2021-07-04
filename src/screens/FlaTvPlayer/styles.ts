@@ -1,4 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
+import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,11 +7,27 @@ export const styles = StyleSheet.create({
   },
   player: {
     width: '100%',
-    height: 250,
+    height: Dimensions.get('window').width / (16 / 9),
     backgroundColor: '#000000'
+  },
+  playerInfo: {
+    position: 'absolute',
+    width: '100%',
+    paddingTop: 30,
+    paddingBottom: 10,
+    paddingHorizontal: 10,
+    bottom: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontFamily: theme.fonts.poppinsRegular,
+    fontSize: 23,
+    color: theme.colors.white,
   },
   content: {
     flex: 1,
+    marginTop: 10
   },
   buttons: {
     width: '100%',
