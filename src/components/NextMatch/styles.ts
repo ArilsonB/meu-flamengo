@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   teamLogos: {
-    height: 45,
+    height: 65,
     marginTop: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -31,9 +31,11 @@ export const styles = StyleSheet.create({
     fontSize: 30,
     marginHorizontal: 5,
   },
-  teams: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  team: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   teamName: {
     flex: 1,

@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 
 import {
@@ -14,8 +15,13 @@ export function FlaTvSlider() {
     <View style={styles.container}>
       <Image
         style={styles.image}
+        resizeMode='cover'
         source={{ uri: 'https://pbs.twimg.com/media/E5U8d6pXwAQXTr9?format=jpg&name=large' }} />
-      <Text style={styles.title}>Flamengo: Uma Paixão sem fim.</Text>
+      <LinearGradient
+        colors={['transparent', '#333']}
+        style={styles.bottomTitle}>
+        <Text style={styles.title}>Flamengo: Uma Paixão sem fim.</Text>
+      </LinearGradient>
       <ExFlaTvPlus />
     </View>
   );

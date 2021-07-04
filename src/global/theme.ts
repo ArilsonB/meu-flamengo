@@ -1,5 +1,3 @@
-import { Poppins_700Bold } from "@expo-google-fonts/poppins"
-
 const theme = {
   colors: {
     white: '#FFFFFF',
@@ -7,7 +5,7 @@ const theme = {
     bgSecondary: '#8B0808',
     primary: '',
     secondary: '',
-    buttonBg: '#300000',
+    buttonBg: 'rgba(0,0,0,0.5)',
     gameBoxBg: 'rgba(64, 0, 0, 0.48)',
     brasileiraoBg: 'rgba(26, 104, 13, 0.69)',
     copaBrasilBg: '',

@@ -7,8 +7,15 @@ import { Ionicons } from '@expo/vector-icons';
 import { styles } from './styles';
 
 import Logo from '../../assets/logo.png';
+import { useNavigation } from '@react-navigation/native';
 
 const Header: React.FC = () => {
+  const navigation = useNavigation();
+
+  function handleOpenFlaTv() {
+    navigation.navigate('FlaTvHome');
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.profile}>
@@ -25,7 +32,7 @@ const Header: React.FC = () => {
         <HeaderButton icon="home-outline" title="Inicio" isActive />
         <HeaderButton icon="calendar-outline" title="Agenda" />
         <HeaderButton icon="football-outline" title="Partidas" />
-        <HeaderButton icon="tv-outline" title="Midia" />
+        <HeaderButton icon="tv-outline" title="FlaTV+" onPress={handleOpenFlaTv} isPremium />
         <HeaderButton icon="ios-card-outline" title="Ingresso" />
         <HeaderButton icon="menu-outline" title="Menu" />
       </ScrollView>

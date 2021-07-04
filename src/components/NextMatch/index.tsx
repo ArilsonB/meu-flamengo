@@ -31,22 +31,22 @@ export function NextMatch({ data, ...rest }: Props) {
   return (
     <TouchableOpacity
       style={styles.container}
-      {...rest}>
-      <View style={styles.content}>
+      {...rest}
+      activeOpacity={0.8}>
+      <View
+        style={styles.content}>
         <View style={styles.teamLogos}>
-          <View>
+          <View style={styles.team}>
             <Image style={styles.teamLogo} source={HomeTeam} />
+            <Text style={[styles.teamName, { textAlign: 'center' }]}>{data.homeTeam}</Text>
           </View>
           <View>
             <Text style={styles.divider}>x</Text>
           </View>
-          <View>
+          <View style={styles.team}>
             <Image style={styles.teamLogo} source={GuestTeam} />
+            <Text style={[styles.teamName, { textAlign: 'center' }]}>{data.guestTeam}</Text>
           </View>
-        </View>
-        <View style={styles.teams}>
-          <Text style={[styles.teamName, { textAlign: 'center' }]}>{data.homeTeam}</Text>
-          <Text style={[styles.teamName, { textAlign: 'center' }]}>{data.guestTeam}</Text>
         </View>
         <View style={styles.champInfo}>
           <Text style={styles.info}>Brasileirão Serie A 2021</Text>

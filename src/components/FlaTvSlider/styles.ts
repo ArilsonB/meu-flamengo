@@ -13,12 +13,19 @@ export const styles = StyleSheet.create({
   image: {
     flex: 1,
   },
-  title: {
+  bottomTitle: {
     position: 'absolute',
-    bottom: 15,
-    fontFamily: theme.fonts.poppinsLight,
-    marginHorizontal: 10,
-    fontSize: 22,
-    color: '#000',
+    width: '100%',
+    paddingTop: 30,
+    paddingBottom: 10,
+    paddingHorizontal: 10,
+    bottom: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontFamily: theme.fonts.poppinsRegular,
+    fontSize: 23,
+    color: theme.colors.white,
   }
 });

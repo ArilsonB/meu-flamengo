@@ -4,25 +4,36 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Image
+  Image,
+  TouchableOpacityProps
 } from 'react-native';
 
 import { styles } from './styles';
 
 import HomeTeam from '../../assets/homeTeam.png';
 import GuestTeam from '../../assets/guestTeam.png';
+import { LinearGradient } from 'expo-linear-gradient';
 
-export function NowPlaying() {
+export function NowPlaying({ ...props }: TouchableOpacityProps) {
   return (
-    <TouchableOpacity>
-      <View style={styles.container}>
-        <View style={styles.matchImg}>
+    <TouchableOpacity {...props}>
+      <View
+        style={styles.container}>
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={['#FC8902', '#E79F4C', '#EB850E', '#FFA439']}
+          style={styles.matchImg}>
 
-        </View>
+        </LinearGradient>
         <View style={styles.matchInfo}>
-          <View style={styles.champBack}>
+          <LinearGradient
+            start={{ x: 0, y: 1 }}
+            end={{ x: 1, y: 0 }}
+            colors={['#FC8902', '#E79F4C', '#EB850E', '#FFA439']}
+            style={styles.champBack}>
             <Text style={styles.champTitle}>Campeonato Brasileiro  -  Serie A 2021</Text>
-          </View>
+          </LinearGradient>
           <View style={styles.teams}>
             <View style={styles.team}>
               <Text style={styles.teamName}>Flamengo</Text>

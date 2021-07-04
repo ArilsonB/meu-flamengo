@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 
 import {
@@ -13,6 +14,13 @@ import { SectionTitle } from '../../components/SectionTitle';
 import { styles } from './styles';
 
 export function FlaTvHome() {
+
+  const navigation = useNavigation();
+
+  function openPlayer() {
+    navigation.navigate('FlaTvPlayer');
+  }
+
   return (
     <BackgroundDark>
       <View style={styles.container}>
@@ -24,10 +32,9 @@ export function FlaTvHome() {
           </View>
           <View>
             <SectionTitle title="Agora" />
-            <NowPlaying />
+            <NowPlaying onPress={openPlayer} />
           </View>
         </View>
-
       </View>
     </BackgroundDark>
   );
