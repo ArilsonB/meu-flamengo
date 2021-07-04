@@ -1,12 +1,14 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Text } from 'react-native';
 import { Background } from '../../components/Background';
 import { FlaTVPromotion } from '../../components/FlaTVPromotion';
 import { Header } from '../../components/Header';
 import { LastGames } from '../../components/LastGames';
+import { ModalView } from '../../components/ModalView';
 import { NextMatches } from '../../components/NextMatches';
 import { SectionTitle } from '../../components/SectionTitle';
+import { Championship } from '../Championship';
 
 import { styles } from './styles';
 
@@ -39,6 +41,9 @@ export const Home: React.FC = () => {
           </View>
         </ScrollView>
       </View>
+      <ModalView visible={false}>
+        <Championship />
+      </ModalView>
     </Background>
   );
 }

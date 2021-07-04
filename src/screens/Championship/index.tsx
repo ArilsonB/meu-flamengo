@@ -1,14 +1,18 @@
 import React from 'react';
 import {
-  View
+  View,
+  Text
 } from 'react-native';
+import { Background } from '../../components/Background';
+import { Brasileirao } from '../../utils/Brasileirao';
 
 import { styles } from './styles';
 
 export const Championship: React.FC = () => {
   return (
-    <View style={styles.container}>
-
-    </View>
+    <Background>
+      <Brasileirao />
+      <Text>Olá mundo!</Text>
+    </Background>
   );
 }
