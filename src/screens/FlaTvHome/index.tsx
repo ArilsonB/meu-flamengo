@@ -4,7 +4,8 @@ import React from 'react';
 import {
   ScrollView,
   View,
-  Text
+  Text,
+  FlatList
 } from 'react-native';
 import { BackgroundDark } from '../../components/BackgroundDark';
 import { FlaTvHeader } from '../../components/FlaTvHeader';
@@ -23,11 +24,27 @@ export const FlaTvHome: React.FC = () => {
     navigation.navigate('FlaTvPlayer');
   }
 
+  const videos = [
+    {
+      id: "1",
+    },
+    {
+      id: "2",
+    },
+    {
+      id: "3",
+    },
+    {
+      id: "4",
+    }
+  ];
   return (
     <BackgroundDark>
       <View style={styles.container}>
         <FlaTvHeader />
-        <ScrollView style={styles.content}>
+        <ScrollView
+          contentContainerStyle={styles.contentFooter}
+          style={styles.content}>
           <View>
             <FlaTvSlider />
           </View>
@@ -37,9 +54,17 @@ export const FlaTvHome: React.FC = () => {
           </View>
           <View>
             <SectionTitle title="Mais Conteúdos" />
-            <View>
-              <VideoBox />
-            </View>
+            <FlatList
+              data={videos}
+              scrollEnabled={false}
+              keyExtractor={item => item.id}
+              numColumns={2}
+              columnWrapperStyle={styles.row}
+              renderItem={({ item }) => <VideoBox />}
+              style={styles.list}
+              contentContainerStyle={{ paddingHorizontal: 24 }}
+              ItemSeparatorComponent={() => <View style={{ height: 10, backgroundColor: 'transparent' }} />}
+            />
           </View>
         </ScrollView>
       </View>

@@ -15,6 +15,16 @@ import EventIndicator from '../../assets/EventIndicator.png';
 import EventIndicatorRight from '../../assets/EventIndicatorRight.png';
 import HomeTeam from '../../assets/homeTeam.png';
 
+type Event = {
+  id: string;
+  type: string;
+  teamId: string;
+  isGuest: boolean;
+  time: string;
+  title: string;
+  text: string;
+}
+
 export const EventBox = ({ isGuest = false }: Props) => {
   return (
     <View style={styles.container}>

@@ -3,7 +3,7 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    width: 200,
+    width: '48.6%',
     height: 200,
     borderRadius: 10,
     overflow: 'hidden',

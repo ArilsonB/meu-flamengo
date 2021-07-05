@@ -6,5 +6,15 @@ export const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+  },
+  contentFooter: {
+    paddingBottom: 34,
+  },
+  list: {
+    marginTop: 10,
+  },
+  row: {
+    flex: 1,
+    justifyContent: 'space-between'
   }
 });
