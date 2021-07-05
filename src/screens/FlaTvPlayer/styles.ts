@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
   },
   gameStatsContainer: {
     width: '100%',
-    flexDirection: 'row',
+    flexDirection: 'column',
     paddingBottom: 30,
   },
   homeTeam: {

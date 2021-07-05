@@ -3,7 +3,14 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: '49%',
+    alignItems: 'center',
+    flexDirection: 'row',
+    marginVertical: 5,
+  },
+  containerRight: {
+    width: '48.6%',
+    alignSelf: 'flex-end',
     alignItems: 'center',
     flexDirection: 'row',
     marginVertical: 5,

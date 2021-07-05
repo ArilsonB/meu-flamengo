@@ -42,25 +42,12 @@ export const FlaTvPlayer: React.FC = () => {
             showsVerticalScrollIndicator={false}
             contentContainerStyle={styles.gameStatsContainer}
             style={styles.gameStats}>
-            <View style={styles.homeTeam}>
-              <EventBox />
-              <EventBox />
-              <EventBox />
-              <EventBox />
-              <EventBox />
-              <EventBox />
-              <EventBox />
-            </View>
-            <View style={styles.divider}>
-
-            </View>
-            <View style={styles.guestTeam}>
-              <EventBox isGuest />
-              <EventBox isGuest />
-              <EventBox isGuest />
-              <EventBox isGuest />
-              <EventBox isGuest />
-            </View>
+            <EventBox isGuest />
+            <EventBox />
+            <EventBox isGuest />
+            <EventBox />
+            <EventBox />
+            <EventBox isGuest />
           </ScrollView>
         </View>
       </View>
