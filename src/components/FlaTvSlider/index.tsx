@@ -3,6 +3,7 @@ import React from 'react';
 
 import {
   View,
+  ScrollView,
   Text,
   Image
 } from 'react-native';
@@ -12,7 +13,10 @@ import { styles } from './styles';
 
 export function FlaTvSlider() {
   return (
-    <View style={styles.container}>
+    <ScrollView
+      scrollEventThrottle={10}
+      pagingEnabled
+      style={styles.container}>
       <Image
         style={styles.image}
         resizeMode='cover'
@@ -23,6 +27,6 @@ export function FlaTvSlider() {
         <Text style={styles.title}>Flamengo: Uma Paixão sem fim.</Text>
       </LinearGradient>
       <ExFlaTvPlus />
-    </View>
+    </ScrollView>
   );
 }

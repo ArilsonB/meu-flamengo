@@ -19,13 +19,11 @@ export function NowPlaying({ ...props }: TouchableOpacityProps) {
     <TouchableOpacity {...props}>
       <View
         style={styles.container}>
-        <LinearGradient
-          start={{ x: 0, y: 1 }}
-          end={{ x: 1, y: 0 }}
-          colors={['#FC8902', '#E79F4C', '#EB850E', '#FFA439']}
-          style={styles.matchImg}>
-
-        </LinearGradient>
+        <Image
+          style={styles.matchImg}
+          source={{
+            uri: ''
+          }} />
         <View style={styles.matchInfo}>
           <LinearGradient
             start={{ x: 0, y: 1 }}

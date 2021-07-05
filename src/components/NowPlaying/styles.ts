@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     width: Dimensions.get('window').width - 48,
     height: 100,
-    backgroundColor: '#000000',
+    backgroundColor: '#111111',
     borderRadius: 10,
     marginTop: 14,
     marginHorizontal: 24,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   matchImg: {
     width: 100,
     height: 100,
-    backgroundColor: 'red',
+    backgroundColor: '#1a1a1a',
   },
   matchInfo: {
     flex: 1,
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
   champBack: {
     width: '100%',
     height: 20,
-    backgroundColor: '#333',
+    backgroundColor: '#1a1a1a',
     justifyContent: 'center',
     alignItems: 'center'
   },

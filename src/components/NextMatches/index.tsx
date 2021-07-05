@@ -17,13 +17,13 @@ export function NextMatches() {
     <View style={styles.container}>
       <FlatList
         data={nextGames}
+        scrollEnabled={false}
         keyExtractor={item => item.id}
         numColumns={2}
         columnWrapperStyle={styles.row}
         renderItem={({ item }) => <NextMatch data={item} />}
         contentContainerStyle={{ paddingHorizontal: 24 }}
         ItemSeparatorComponent={() => <View style={{ height: 10, backgroundColor: 'transparent' }} />}
-        showsHorizontalScrollIndicator={false}
       />
     </View>
   );

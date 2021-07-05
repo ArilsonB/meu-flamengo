@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     width: Dimensions.get('window').width - 48,
     height: 230,
     marginHorizontal: 24,
-    backgroundColor: 'red',
+    backgroundColor: '#1a1a1a',
     borderRadius: 20,
     overflow: 'hidden'
   },

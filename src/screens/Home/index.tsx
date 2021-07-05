@@ -26,7 +26,8 @@ export const Home: React.FC = () => {
         <Header />
         <ScrollView
           style={styles.content}
-          contentContainerStyle={{ paddingBottom: 24 }}>
+          contentContainerStyle={{ paddingBottom: 24 }}
+          horizontal={false}>
           <View>
             <SectionTitle title="Ultimas partidas" />
             <LastGames />
